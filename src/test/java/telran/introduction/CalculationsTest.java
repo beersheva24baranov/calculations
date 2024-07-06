@@ -10,4 +10,8 @@ public class CalculationsTest {
     void sumTest() {
         assertEquals(4, sum(2, 2));
     }
+    @Test
+    void multiplyTest() {
+        assertEquals(12, multiply(2, 6));
+    }
 }
