@@ -30,16 +30,15 @@ public static int sumOfDigits(int number1) {
 }
 public static int maxDigit(int number){
     int maxDigit = 0;
-    number = Math.abs(number);
+    number = Math.abs(number); // возвращаем модуль чтобы работало для отрицаельных чисел
     while (number !=0) {
         int currentDigit;
-        currentDigit = number % 10;
-        if (maxDigit < currentDigit) {
-            maxDigit = currentDigit;
+        currentDigit = number % 10; //   берем остаток от деления (самый младший разряд  - идем с конца) currentDigit  5 // 3 / 1 
+        if (maxDigit < currentDigit) {  //  если currentDigit больше maxDigit то то он становится  maxDigit
+            maxDigit = currentDigit;     // р пример 108305   maxDigit  5 // 8 
         }
-        number /= 10;
-    }
-        return maxDigit;
+        number /= 10; // делим number на 10 и берем целое чтобы перейти к следующему порядку - укоротить число после каждой итерации вне зависимости от условия по maxDigit   }
+        return maxDigit;  // выводим что  последнее было в maxDigit
     }
 public static boolean isDividedOn(int number, int divider) {
     if (divider == 0) {
