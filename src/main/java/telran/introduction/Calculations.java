@@ -27,11 +27,6 @@ public static int sumOfDigits(int number1) {
         number1 /= 10;  // number делим на 10 135/10 = 13  number = 13     number1 13 // 1 // 0 
             }  
     return res;   
-    135
-    8
-    13
-    9
-    1
 }
 public static int maxDigit(int number){
     int maxDigit = 0;
