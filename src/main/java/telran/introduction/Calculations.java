@@ -20,11 +20,11 @@ public static int subtract(int op1, int op2) {
     int res = op1 - op2;
     return res;
 }
-public static int sumOfDigits(int number) {
+public static int sumOfDigits(int number1) {
     int res = 0;
-    while (number!=0) {
-        res += number % 10;
-        number /= 10;
+    while (number1!=0) {  // пока number не равен 0
+        res += number1 % 10; // res = (res+number) и возвращаем остаток деления на 10 например 135%10=5 0+5=5 res=5
+        number1 /= 10;  // number делим на 10 135/10 = 13  number = 13
             }
     return res;
 }
