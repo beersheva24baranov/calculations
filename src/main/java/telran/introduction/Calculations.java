@@ -42,7 +42,7 @@ public static int maxDigit(int number){
     }
 public static boolean isDividedOn(int number, int divider) {
     if (divider == 0) {
-        return false;
+        return false;  // показываем ошибку если  делим на ноль
     }
     if (number % divider != 0) {
         return false;
